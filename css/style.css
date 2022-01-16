@@ -1,0 +1,50 @@
+body {
+  font-family: "Calibri", sans-serif;
+}
+
+.my-navbar {
+  font-weight: bold;
+}
+
+.my-navbar.navbar {
+  background-color: #eeece1;
+}
+
+.my-navbar .navbar-nav.me-auto .nav-item {
+  margin-right: 2rem;
+}
+
+.my-navbar .nav-item a.nav-link.active {
+  color: #e36d1c;
+}
+
+.my-navbar .nav-item a.nav-link {
+  color: #0e0e0e;
+}
+
+.my-navbar .nav-item a.nav-link:hover {
+  color: #e36d1c;
+}
+
+.my-navbar .navbar-toggler .navbar-toggler-icon {
+  color: #0e0e0e;
+}
+
+.my-main {
+  background-color: #92cddc;
+}
+
+.my-main .my-main-home,
+.my-main .my-main-login {
+  height: 650px;
+}
+
+.my-main-login-card {
+  background-color: #eeece1;
+  border-radius: 30px;
+  width: 500px;
+}
+
+.my-footer {
+  background-color: #eeece1;
+}
