@@ -15,7 +15,7 @@
     <!-- Call my style -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Site title -->
-    <title>Home - Sistem Pakar Diagnosa Kepribadian</title>
+    <title>Gejala - Sistem Pakar Diagnosa Kepribadian</title>
   </head>
   <body>
     <!-- Navbar section -->
@@ -36,19 +36,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="page_kepribadian.html">Kepribadian</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page_gejala.html">Gejala</a>
+              <a class="nav-link active" href="page_gejala.html">Gejala</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="page_konsultasi.html">Konsultasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page_laporan.html">Laporan Konsultasi</a>
+              <a class="nav-link" href="page_laporan.html"
+                >Laporan Konsultasi</a
+              >
             </li>
           </ul>
           <div class="d-flex">
@@ -63,15 +65,38 @@
     </nav>
     <!-- Main section -->
     <div class="my-main container-fluid">
-      <div class="my-main-home row">
-        <div class="col-12 align-self-center">
-          <div class="mt-5 fs-1 fw-bold text-center">
-            SISTEM PAKAR DIAGNOSA KEPRIBADIAN <br />
-            MENGGUNAKAN METODE CERTAINTY FACTOR BERBASIS WEB
-          </div>
-          <div class="my-5 text-center">
-            <a href="#" class="btn btn-primary">Mulai Konsultasi</a>
-          </div>
+      <div class="my-main-gejala row">
+        <div class="col-12">
+          <div class="mt-5 fs-1 fw-bold text-center">Gejala</div>
+        </div>
+        <div class="col-12 p-5">
+        <a href="#" class="btn btn-primary mb-3">Tambah Data</a>
+          <table class="table table-light">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Kode Gejala</th>
+                <th>Nama Gejala</th>
+                <th>Ciri Gejala</th>
+                <th>Nilai MD</th>
+                <th>Nilai MB</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td>98129038</td>
+                <td>Sanguinis</td>
+                <td>
+                  Apakah anda menyukai detail terhadap hal kecil maupun besar?
+                </td>
+                <td>10</td>
+                <td>100</td>
+                <td><a href="#">Edit</a> | <a href="#">Hapus</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

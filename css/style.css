@@ -39,7 +39,7 @@ body {
   height: 650px;
 }
 
-.my-main-login-card {
+.my-main-login-card, .my-main-konsultasi-card {
   background-color: #eeece1;
   border-radius: 30px;
   width: 500px;

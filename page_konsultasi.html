@@ -15,7 +15,7 @@
     <!-- Call my style -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Site title -->
-    <title>Home - Sistem Pakar Diagnosa Kepribadian</title>
+    <title>Gejala - Sistem Pakar Diagnosa Kepribadian</title>
   </head>
   <body>
     <!-- Navbar section -->
@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="page_kepribadian.html">Kepribadian</a>
@@ -45,10 +45,14 @@
               <a class="nav-link" href="page_gejala.html">Gejala</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page_konsultasi.html">Konsultasi</a>
+              <a class="nav-link active" href="page_konsultasi.html"
+                >Konsultasi</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page_laporan.html">Laporan Konsultasi</a>
+              <a class="nav-link" href="page_laporan.html"
+                >Laporan Konsultasi</a
+              >
             </li>
           </ul>
           <div class="d-flex">
@@ -63,15 +67,35 @@
     </nav>
     <!-- Main section -->
     <div class="my-main container-fluid">
-      <div class="my-main-home row">
-        <div class="col-12 align-self-center">
-          <div class="mt-5 fs-1 fw-bold text-center">
-            SISTEM PAKAR DIAGNOSA KEPRIBADIAN <br />
-            MENGGUNAKAN METODE CERTAINTY FACTOR BERBASIS WEB
-          </div>
-          <div class="my-5 text-center">
-            <a href="#" class="btn btn-primary">Mulai Konsultasi</a>
-          </div>
+      <div class="my-main-konsultasi row">
+        <div class="col-12">
+          <div class="mt-5 fs-1 fw-bold text-center">Konsultasi</div>
+        </div>
+        <div class="col-12 p-5">
+          <form action="">
+            <div class="mx-auto my-main-konsultasi-card p-5 text-center">
+              <div class="mb-3">
+                <input type="text" placeholder="Masukkan Nama" />
+              </div>
+              <div class="mb-3">
+                <input type="text" placeholder="Alamat" />
+              </div>
+              <div class="mb-3">
+                <input type="text" placeholder="Jenis Kelamin" />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  placeholder="Tanggal Konsultasi"
+                  value="10/10/2022"
+                  readonly
+                />
+              </div>
+              <div>
+                <button onclick="" class="btn btn-primary">Next</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
