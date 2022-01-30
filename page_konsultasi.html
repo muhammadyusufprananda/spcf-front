@@ -14,6 +14,7 @@
     />
     <!-- Call my style -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form_konsultasi.css" />
     <!-- Site title -->
     <title>Gejala - Sistem Pakar Diagnosa Kepribadian</title>
   </head>
@@ -71,29 +72,97 @@
         <div class="col-12">
           <div class="mt-5 fs-1 fw-bold text-center">Konsultasi</div>
         </div>
-        <div class="col-12 p-5">
-          <form action="">
-            <div class="mx-auto my-main-konsultasi-card p-5 text-center">
-              <div class="mb-3">
-                <input type="text" placeholder="Masukkan Nama" />
-              </div>
-              <div class="mb-3">
-                <input type="text" placeholder="Alamat" />
-              </div>
-              <div class="mb-3">
-                <input type="text" placeholder="Jenis Kelamin" />
-              </div>
-              <div class="mb-3">
+        <div class="col-12">
+          <form id="regForm" method="">
+            <h1>Form Konsultasi:</h1>
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">
+              <h3>Informasi Diri:</h3>
+              <p>
+                <label for="nama">Nama</label>
                 <input
+                  id="nama"
+                  class="form-control"
                   type="text"
-                  placeholder="Tanggal Konsultasi"
-                  value="10/10/2022"
+                  placeholder="Masukkan Nama Lengkap"
+                  name="nama"
+                />
+              </p>
+              <p>
+                <label for="alamat">Alamat</label>
+                <input
+                  id="alamat"
+                  class="form-control"
+                  type="text"
+                  placeholder="Masukkan Alamat Lengkap"
+                  name="alamat"
+                />
+              </p>
+              <p>
+                <label for="jk">Jenis Kelamin</label>
+                <select id="jk" class="form-select" required>
+                  <option selected value="Laki-laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+              </p>
+              <p>
+                <label for="tanggal">Tanggal Konsultasi</label>
+                <input
+                  id="tanggal"
+                  class="form-control"
+                  type="text"
+                  value="10/12/2022"
+                  name="tanggal"
                   readonly
                 />
+              </p>
+            </div>
+            <div class="tab">
+              <h3>Gejala yang dialami:</h3>
+              <table class="table table-light">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Kode</th>
+                    <th>Gejala</th>
+                    <th>Nilai</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>G001</td>
+                    <td>
+                      Apakah anda menyukai detail terhadap hal kecil maupun
+                      besar?
+                    </td>
+                    <td>
+                      <select class="form-select" name="g001" required>
+                        <option selected value="1">1 (Pasti)</option>
+                        <option value="0.8">0.8 (Hampir Pasti)</option>
+                        <option value="0.6">0.6 (Kemungkinan Besar)</option>
+                        <option value="0.4">0.4 (Kemungkinan)</option>
+                        <option value="0.2">0.2 (Tidak Pasti)</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="overflow: auto">
+              <div style="float: right">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                  Previous
+                </button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                  Next
+                </button>
               </div>
-              <div>
-                <button onclick="" class="btn btn-primary">Next</button>
-              </div>
+            </div>
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align: center; margin-top: 40px">
+              <span class="step"></span>
+              <span class="step"></span>
             </div>
           </form>
         </div>
@@ -116,5 +185,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="js/form_konsultasi.js"></script>
   </body>
 </html>
